@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Design</title>
+    <script src="https://kit.fontawesome.com/04a0c2af21.js" crossorigin="anonymous"></script>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f5f5f5;
+        }
+
+        .container {
+            margin: auto;
+            max-width: 1250px;
+            padding: 10px;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 15px;
+            background-color: rgb(10, 10, 70);
+        }
+
+        .box1, .box2, .box3, .box4, .box5, .box6, .box7, .box8 {
+            background-color: #333;
+            color: #fff;
+            padding: 15px;
+            border-radius: 8px;
+            text-align: center;
+        }
+
+        .box1 {
+            background-color: rgb(44, 194, 194);
+        }
+
+        h1 {
+            color: wheat;
+            margin-bottom: 10px;
+        }
+
+        p {
+            color: wheat;
+        }
+
+        h5 {
+            margin-top: 15px;
+            color: wheat;
+        }
+
+        .box2 {
+            background-color: rgba(226, 50, 226, 0.39);
+            position: relative;
+        }
+
+        .fa-calendar-days {
+            font-size: 30px;
+            color: wheat;
+            margin-top: 10px;
+        }
+
+        .number {
+            font-size: 100px;
+            font-weight: bold;
+            margin: 10px 0;
+        }
+
+        .mon {
+            font-size: 20px;
+            color: wheat;
+        }
+
+        .box3, .box4, .box7 {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(90px, 1fr));
+            gap: 10px;
+        }
+
+        .box3 .paraP, .box4 .para, .box7 .para6 {
+            height: 90px;
+            background-size: cover;
+            background-position: center;
+        }
+
+        .box5 {
+            background-image: url('view\ pic.jpg');
+            background-size: cover;
+            background-position: center;
+            grid-column: span 2;
+            color: #fff;
+            padding: 20px;
+            text-align: left;
+        }
+
+        .degree {
+            font-size: 140px;
+            margin: -30px 0;
+        }
+
+        .box6 {
+            display: flex;
+            gap: 10px;
+            justify-content: center;
+        }
+
+        .para4, .para5 {
+            flex: 1;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 8px;
+        }
+
+        .fa-internet-explorer, .fa-question {
+            font-size: 60px;
+            color: white;
+        }
+
+        .box8 {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 60px;
+            color: white;
+        }
+
+        @media (max-width: 480px) {
+            .container {
+                grid-template-columns: 1fr;
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box1">
+            <h1>Jean Stone</h1>
+            <p>Thank you for your help!</p>
+            <p>It was great to have your help moving</p>
+            <h5>Mail</h5>
+        </div>
+
+        <div class="box2">
+            <p>House warming party at Jean's new house</p>
+            <p>5:30 PM - 9:00 PM</p>
+            <i class="fa-regular fa-calendar-days"></i>
+            <p class="number">24</p>
+            <h3 class="mon">Monday</h3>
+        </div>
+
+        <div class="box3">
+            <div class="paraP" style="background-image: url('waterfall.jpg');"></div>
+            <div class="para3"><i class="fa-solid fa-circle-play"></i></div>
+            <div class="headPhone"><i class="fa-solid fa-headphones"></i></div>
+            <div class="gamePad"><i class="fa-solid fa-gamepad"></i></div>
+            <div class="camera"><i class="fa-solid fa-camera"></i></div>
+        </div>
+
+        <div class="box4">
+            <div class="para" style="background-image: url('ik pic.jpg');"></div>
+            <div class="parab" style="background-image: url('baba pic.jpg');"></div>
+            <div class="headPhone1" style="background-image: url('baby pic.jpg');"></div>
+            <div class="gamePad1" style="background-image: url('girl pic.jpg');"></div>
+            <div class="camera1" style="background-image: url('boy pic.jpg');"></div>
+        </div>
+
+        <div class="box5">
+            <p class="degree">68<sup>o</sup></p>
+            <p class="sunny">San Francisco<br>Sunny</p>
+            <p>Today <br> 65*/52* Mostly sunny <br><br>Tomorrow <br> 68*/53* Partly sunny</p>
+        </div>
+
+        <div class="box6">
+            <div class="para4"><i class="fa-brands fa-internet-explorer"></i></div>
+            <div class="para5"><i class="fa-solid fa-question"></i></div>
+        </div>
+
+        <div class="box7">
+            <div class="para6" style="background-image: url('flower pic.webp');"></div>
+            <div class="para7"><i class="fa-solid fa-cloud"></i></div>
+        </div>
+
+        <div class="box8">
+            <i class="fa-solid fa-store"></i>
+        </div>
+    </div>
+</body>
+</html>
